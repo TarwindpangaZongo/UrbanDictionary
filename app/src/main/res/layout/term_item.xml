@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginNormal"
+    app:cardCornerRadius="@dimen/radiusNormal"
+    app:cardElevation="@dimen/elevationNormal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/definition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLargex"
+            android:layout_marginTop="@dimen/marginLargex"
+            android:layout_marginEnd="16dp"
+            android:maxLines="20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/definition" />
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="@dimen/marginLargex"
+            android:layout_marginTop="@dimen/marginLargex"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/thumb_up"
+            android:src="@drawable/ic_thumb_up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/definition" />
+
+        <TextView
+            android:id="@+id/uptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/up"
+            app:layout_constraintStart_toEndOf="@+id/up"
+            app:layout_constraintTop_toTopOf="@+id/up"
+            tools:text="25" />
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLargexxx"
+            android:layout_marginTop="@dimen/marginLargex"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/thumb_down"
+            android:src="@drawable/ic_thumb_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uptxt"
+            app:layout_constraintTop_toBottomOf="@+id/definition" />
+
+        <TextView
+            android:id="@+id/downtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/down"
+            app:layout_constraintStart_toEndOf="@+id/down"
+            app:layout_constraintTop_toTopOf="@+id/down"
+            tools:text="40" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

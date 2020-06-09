@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="picture_image_height">250dp</dimen>
+    <dimen name="picture_title_text_size">20sp</dimen>
+    <dimen name="picture_author_text_size">16sp</dimen>
+    <dimen name="recycler_loading_view_height">80dp</dimen>
+    <dimen name="marginLargexxx">32dp</dimen>
+    <dimen name="marginLargexx">16dp</dimen>
+    <dimen name="marginLargex">16dp</dimen>
+    <dimen name="marginLarge">12dp</dimen>
+    <dimen name="marginNormal">8dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="radiusNormal">8dp</dimen>
+    <dimen name="elevationNormal">8dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+</resources>
